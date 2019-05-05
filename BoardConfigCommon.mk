@@ -119,7 +119,7 @@ BOARD_CHARGING_MODE_BOOTING_LPM :=
 BOARD_BATTERY_DEVICE_NAME := "bq27x41"
 
 # Filesystem
-TARGET_FS_CONFIG_GEN := device/amazon/hdx-common/config.fs
+TARGET_FS_CONFIG_GEN := device/amazon/hdx-common/configs/config.fs
 TARGET_HW_DISK_ENCRYPTION := true
 TARGET_USERIMAGES_USE_EXT4 := true
 TARGET_USERIMAGES_USE_F2FS := true
