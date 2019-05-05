@@ -118,6 +118,11 @@ PRODUCT_COPY_FILES += \
 	$(LOCAL_PATH)/configs/etc/izat.conf:$(TARGET_COPY_OUT_VENDOR)/etc/izat.conf \
 	$(LOCAL_PATH)/configs/etc/lowi.conf:$(TARGET_COPY_OUT_VENDOR)/etc/lowi.conf \
 
+# IPv6
+PRODUCT_PACKAGES += \
+    ebtables \
+    ethertypes
+
 # IRSC
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/etc/sec_config:$(TARGET_COPY_OUT_VENDOR)/etc/sec_config
