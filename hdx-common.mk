@@ -15,22 +15,22 @@ PRODUCT_AAPT_PREBUILT_DPI := xxhdpi xhdpi hdpi
 
 # Permissions
 PRODUCT_COPY_FILES += \
-	$(COMMON_FOLDER)/amazon_tablet_core_hardware.xml:system/etc/permissions/tablet_core_hardware.xml \
-	frameworks/native/data/etc/android.hardware.audio.low_latency.xml:system/etc/permissions/android.hardware.audio.low_latency.xml \
-	frameworks/native/data/etc/android.hardware.camera.front.xml:system/etc/permissions/android.hardware.camera.front.xml \
-	frameworks/native/data/etc/android.hardware.wifi.xml:system/etc/permissions/android.hardware.wifi.xml \
-	frameworks/native/data/etc/android.hardware.wifi.direct.xml:system/etc/permissions/android.hardware.wifi.direct.xml \
-	frameworks/native/data/etc/android.hardware.sensor.accelerometer.xml:system/etc/permissions/android.hardware.sensor.accelerometer.xml \
-	frameworks/native/data/etc/android.hardware.sensor.light.xml:system/etc/permissions/android.hardware.sensor.light.xml \
-	frameworks/native/data/etc/android.hardware.sensor.gyroscope.xml:system/etc/permissions/android.hardware.sensor.gyroscope.xml \
-	frameworks/native/data/etc/android.hardware.sensor.stepcounter.xml:system/etc/permissions/android.hardware.sensor.stepcounter.xml \
-	frameworks/native/data/etc/android.hardware.sensor.stepdetector.xml:system/etc/permissions/android.hardware.sensor.stepdetector.xml \
-	frameworks/native/data/etc/android.hardware.touchscreen.multitouch.jazzhand.xml:system/etc/permissions/android.hardware.touchscreen.multitouch.jazzhand.xml \
-	frameworks/native/data/etc/android.hardware.usb.accessory.xml:system/etc/permissions/android.hardware.usb.accessory.xml \
-	frameworks/native/data/etc/android.hardware.usb.host.xml:system/etc/permissions/android.hardware.usb.host.xml \
-	frameworks/native/data/etc/android.software.sip.voip.xml:system/etc/permissions/android.software.sip.voip.xml \
-	frameworks/native/data/etc/android.hardware.telephony.gsm.xml:system/etc/permissions/android.hardware.telephony.gsm.xml \
-	frameworks/native/data/etc/android.hardware.bluetooth_le.xml:system/etc/permissions/android.hardware.bluetooth_le.xml
+	$(COMMON_FOLDER)/amazon_tablet_core_hardware.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/tablet_core_hardware.xml \
+	frameworks/native/data/etc/android.hardware.audio.low_latency.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.audio.low_latency.xml \
+	frameworks/native/data/etc/android.hardware.camera.front.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.camera.front.xml \
+	frameworks/native/data/etc/android.hardware.wifi.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.wifi.xml \
+	frameworks/native/data/etc/android.hardware.wifi.direct.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.wifi.direct.xml \
+	frameworks/native/data/etc/android.hardware.sensor.accelerometer.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.sensor.accelerometer.xml \
+	frameworks/native/data/etc/android.hardware.sensor.light.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.sensor.light.xml \
+	frameworks/native/data/etc/android.hardware.sensor.gyroscope.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.sensor.gyroscope.xml \
+	frameworks/native/data/etc/android.hardware.sensor.stepcounter.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.sensor.stepcounter.xml \
+	frameworks/native/data/etc/android.hardware.sensor.stepdetector.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.sensor.stepdetector.xml \
+	frameworks/native/data/etc/android.hardware.touchscreen.multitouch.jazzhand.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.touchscreen.multitouch.jazzhand.xml \
+	frameworks/native/data/etc/android.hardware.usb.accessory.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.usb.accessory.xml \
+	frameworks/native/data/etc/android.hardware.usb.host.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.usb.host.xml \
+	frameworks/native/data/etc/android.software.sip.voip.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.software.sip.voip.xml \
+	frameworks/native/data/etc/android.hardware.telephony.gsm.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.telephony.gsm.xml \
+	frameworks/native/data/etc/android.hardware.bluetooth_le.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.bluetooth_le.xml
 
 # Ramdisk
 PRODUCT_PACKAGES += \
@@ -50,14 +50,14 @@ PRODUCT_PACKAGES += \
 
 # Audio/Media
 PRODUCT_COPY_FILES += \
-	$(LOCAL_PATH)/configs/etc/audio_policy.conf:system/vendor/etc/audio_policy.conf \
-	$(LOCAL_PATH)/configs/etc/media_profiles.xml:system/vendor/etc/media_profiles.xml \
-	$(LOCAL_PATH)/configs/etc/media_codecs.xml:system/vendor/etc/media_codecs.xml \
-	$(LOCAL_PATH)/configs/etc/media_codecs_performance.xml:system/vendor/etc/media_codecs_performance.xml \
-	$(LOCAL_PATH)/configs/etc/mixer_paths.xml:system/vendor/etc/mixer_paths.xml \
-	$(LOCAL_PATH)/configs/etc/mixer_paths.xml:system/vendor/etc/mixer_paths_auxpcm.xml \
-	frameworks/av/media/libstagefright/data/media_codecs_google_audio.xml:system/vendor/etc/media_codecs_google_audio.xml \
-	frameworks/av/media/libstagefright/data/media_codecs_google_video.xml:system/vendor/etc/media_codecs_google_video.xml
+	$(LOCAL_PATH)/configs/etc/audio_policy.conf:$(TARGET_COPY_OUT_VENDOR)/etc/audio_policy.conf \
+	$(LOCAL_PATH)/configs/etc/media_profiles.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_profiles.xml \
+	$(LOCAL_PATH)/configs/etc/media_codecs.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs.xml \
+	$(LOCAL_PATH)/configs/etc/media_codecs_performance.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_performance.xml \
+	$(LOCAL_PATH)/configs/etc/mixer_paths.xml:$(TARGET_COPY_OUT_VENDOR)/etc/mixer_paths.xml \
+	$(LOCAL_PATH)/configs/etc/mixer_paths.xml:$(TARGET_COPY_OUT_VENDOR)/etc/mixer_paths_auxpcm.xml \
+	frameworks/av/media/libstagefright/data/media_codecs_google_audio.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_google_audio.xml \
+	frameworks/av/media/libstagefright/data/media_codecs_google_video.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_google_video.xml
 
 PRODUCT_PACKAGES += \
 	audio.a2dp.default \
@@ -71,12 +71,12 @@ PRODUCT_PACKAGES += \
 
 # Device config files
 PRODUCT_COPY_FILES += \
-	$(LOCAL_PATH)/configs/usr/idc/amazon_touch.idc:system/usr/idc/amazon_touch.idc \
-	$(LOCAL_PATH)/configs/usr/keylayout/atmel_mxt_ts.kl:system/usr/keylayout/atmel_mxt_ts.kl \
-	$(LOCAL_PATH)/configs/usr/keylayout/gpio-keys.kl:system/usr/keylayout/gpio-keys.kl \
-	$(LOCAL_PATH)/configs/usr/keylayout/msm8974-taiko-tablet-snd-card_JACK.kl:system/usr/keylayout/msm8974-taiko-tablet-snd-card_JACK.kl \
-	$(LOCAL_PATH)/configs/usr/keylayout/synaptics_rmi4_i2c.kl:system/usr/keylayout/synaptics_rmi4_i2c.kl \
-	$(LOCAL_PATH)/configs/usr/keylayout/Vendor_1949_Product_0402.kl:system/usr/keylayout/Vendor_1949_Product_0402.kl
+	$(LOCAL_PATH)/configs/usr/idc/amazon_touch.idc:$(TARGET_COPY_OUT_VENDOR)/usr/idc/amazon_touch.idc \
+	$(LOCAL_PATH)/configs/usr/keylayout/atmel_mxt_ts.kl:$(TARGET_COPY_OUT_VENDOR)/usr/keylayout/atmel_mxt_ts.kl \
+	$(LOCAL_PATH)/configs/usr/keylayout/gpio-keys.kl:$(TARGET_COPY_OUT_VENDOR)/usr/keylayout/gpio-keys.kl \
+	$(LOCAL_PATH)/configs/usr/keylayout/msm8974-taiko-tablet-snd-card_JACK.kl:$(TARGET_COPY_OUT_VENDOR)/usr/keylayout/msm8974-taiko-tablet-snd-card_JACK.kl \
+	$(LOCAL_PATH)/configs/usr/keylayout/synaptics_rmi4_i2c.kl:$(TARGET_COPY_OUT_VENDOR)/usr/keylayout/synaptics_rmi4_i2c.kl \
+	$(LOCAL_PATH)/configs/usr/keylayout/Vendor_1949_Product_0402.kl:$(TARGET_COPY_OUT_VENDOR)/usr/keylayout/Vendor_1949_Product_0402.kl
 
 # Charger
 PRODUCT_PACKAGES += \
@@ -109,14 +109,14 @@ PRODUCT_PACKAGES += \
 	gps.msm8974
 
 PRODUCT_COPY_FILES += \
-	$(LOCAL_PATH)/configs/etc/flp.conf:system/etc/flp.conf \
-	$(LOCAL_PATH)/configs/etc/gps.conf:system/etc/gps.conf \
-	$(LOCAL_PATH)/configs/etc/izat.conf:system/etc/izat.conf \
-	$(LOCAL_PATH)/configs/etc/lowi.conf:system/etc/lowi.conf \
+	$(LOCAL_PATH)/configs/etc/flp.conf:$(TARGET_COPY_OUT_VENDOR)/etc/flp.conf \
+	$(LOCAL_PATH)/configs/etc/gps.conf:$(TARGET_COPY_OUT_VENDOR)/etc/gps.conf \
+	$(LOCAL_PATH)/configs/etc/izat.conf:$(TARGET_COPY_OUT_VENDOR)/etc/izat.conf \
+	$(LOCAL_PATH)/configs/etc/lowi.conf:$(TARGET_COPY_OUT_VENDOR)/etc/lowi.conf \
 
 # IRSC
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/configs/etc/sec_config:system/etc/sec_config
+    $(LOCAL_PATH)/configs/etc/sec_config:$(TARGET_COPY_OUT_VENDOR)/etc/sec_config
 
 # Lights
 PRODUCT_PACKAGES += \
@@ -149,7 +149,7 @@ PRODUCT_PACKAGES += \
 
 # Sensors
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/configs/etc/sensor_def_qcomdev.conf:system/etc/sensor_def_qcomdev.conf
+    $(LOCAL_PATH)/configs/etc/sensor_def_qcomdev.conf:$(TARGET_COPY_OUT_VENDOR)/etc/sensor_def_qcomdev.conf
 
 # Keystore
 #PRODUCT_PACKAGES += \
