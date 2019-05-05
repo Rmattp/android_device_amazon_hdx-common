@@ -30,27 +30,50 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.hardware.keymaster@3.0-impl
 
-# RenderScript
-PRODUCT_PACKAGES += \
-android.hardware.renderscript@1.0-impl
-
 # Lights
 PRODUCT_PACKAGES += \
     android.hardware.light@2.0-impl
+
+# NET
+PRODUCT_PACKAGES += \
+    android.system.net.netd@1.0 \
+
+# OMX
+PRODUCT_PACKAGES += \
+    android.hardware.media.omx@1.0
 
 # Power
 PRODUCT_PACKAGES += \
     android.hardware.power@1.0-service-qti
 
-# Sensors
-#PRODUCT_PACKAGES += \
-#    android.hardware.sensors@1.0-impl
-
-# Wifi
+# Radio
 PRODUCT_PACKAGES += \
-    android.hardware.wifi@1.0-service
+    android.hardware.radio@1.0-impl
+
+# RenderScript
+PRODUCT_PACKAGES += \
+    android.hardware.renderscript@1.0-impl
+
+# Sensors
+PRODUCT_PACKAGES += \
+    android.hardware.sensors@1.0-impl
 
 # Thermal
 PRODUCT_PACKAGES += \
-android.hardware.thermal@1.0-impl
+    android.hardware.thermal@1.0-impl
+
+# Usb HAL
+PRODUCT_PACKAGES += \
+    android.hardware.usb@1.0 \
+    android.hardware.usb@1.0-service
+
+# Wifi
+PRODUCT_PACKAGES += \
+    android.hardware.wifi@1.0-service \
+    android.hardware.wifi@1.0-supplicant
+
+# Old binary support
+PRODUCT_PACKAGES += \
+    android.hidl.base@1.0 \
+    android.hidl.manager@1.0
 
