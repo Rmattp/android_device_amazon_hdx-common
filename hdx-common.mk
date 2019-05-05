@@ -200,9 +200,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
 	dtbToolLineage
 
-#PRODUCT_BOOT_JARS += \
-#	qcmediaplayer
-
 # ABI fixes for old binaries
 PRODUCT_PACKAGES += \
 	libshim_libbinder \
