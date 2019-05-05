@@ -200,8 +200,9 @@ PRODUCT_PACKAGES += \
 PRODUCT_BUILD_PROP_OVERRIDES += BUILD_UTC_DATE=0
 
 # HIDL
-include device/amazon/hdx-common/hidl.mk
-DEVICE_MANIFEST_FILE := device/amazon/hdx-common/manifest.xml
+include $(COMMON_FOLDER)/hidl.mk
+DEVICE_MANIFEST_FILE := $(COMMON_FOLDER)/configs/manifest.xml
+DEVICE_MATRIX_FILE := $(COMMON_FOLDER)/configs/compatibility_matrix.xml
 
 # We have enough storage space to hold precise GC data
 PRODUCT_TAGS += dalvik.gc.type-precise
