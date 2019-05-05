@@ -168,6 +168,10 @@ PRODUCT_PACKAGES += \
 	hostapd.deny \
         wificond
 
+# Wifi module - compat-wireless package
+PRODUCT_PACKAGES += \
+	wlan.ko
+
 # QCOM Crypto
 PRODUCT_PACKAGES += \
 	libcryptfs_hw
@@ -179,10 +183,6 @@ PRODUCT_PACKAGES += \
 # DTB Tool
 PRODUCT_PACKAGES += \
 	dtbToolLineage
-
-# Wifi module
-PRODUCT_PACKAGES += \
-	ath6kl_usb.ko
 
 #PRODUCT_BOOT_JARS += \
 #	qcmediaplayer

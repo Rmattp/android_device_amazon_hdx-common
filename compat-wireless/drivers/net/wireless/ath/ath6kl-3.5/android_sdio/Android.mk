@@ -23,7 +23,7 @@ include $(CLEAR_VARS)
 LOCAL_MODULE             := cfg80211_sdio.ko
 LOCAL_MODULE_TAGS        := optional
 LOCAL_MODULE_KBUILD_NAME := cfg80211.ko
-LOCAL_MODULE_PATH        := $(TARGET_OUT_VENDOR)/lib/modules/ath6kl-3.5
+LOCAL_MODULE_PATH        := $(TARGET_OUT)/lib/modules/ath6kl-3.5
 include $(DLKM_DIR)/AndroidKernelModule.mk
 endif
 endif
@@ -33,5 +33,5 @@ include $(CLEAR_VARS)
 LOCAL_MODULE             := ath6kl_sdio.ko
 LOCAL_MODULE_TAGS        := optional debug
 LOCAL_MODULE_KBUILD_NAME := wlan.ko
-LOCAL_MODULE_PATH        := $(TARGET_OUT_VENDOR)/lib/modules/ath6kl-3.5
+LOCAL_MODULE_PATH        := $(TARGET_OUT)/lib/modules/ath6kl-3.5
 include $(DLKM_DIR)/AndroidKernelModule.mk

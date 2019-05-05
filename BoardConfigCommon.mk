@@ -134,23 +134,23 @@ BOARD_FLASH_BLOCK_SIZE := 131072
 
 
 # ATH6KL WLAN
-BOARD_HAS_QCOM_WLAN			:= true
-BOARD_HAS_ATH_WLAN_AR6004		:= true
-BOARD_CONFIG_ATH6KL_USB			:= true
-BOARD_HAS_CFG80211_KERNEL3_4		:= true
-BOARD_WLAN_DEVICE			:= qcwcn
-WPA_SUPPLICANT_VERSION			:= VER_0_8_X
-BOARD_WPA_SUPPLICANT_DRIVER		:= NL80211
-BOARD_WPA_SUPPLICANT_PRIVATE_LIB	:= lib_driver_cmd_$(BOARD_WLAN_DEVICE)
-BOARD_HOSTAPD_DRIVER             	:= NL80211
-BOARD_HOSTAPD_PRIVATE_LIB 		:= lib_driver_cmd_$(BOARD_WLAN_DEVICE)
-PRODUCT_VENDOR_MOVE_ENABLED             := true
-WIFI_DRIVER_FW_PATH_STA			:= "sta"
-WIFI_DRIVER_FW_PATH_AP			:= "ap"
-WIFI_DRIVER_FW_PATH_P2P			:= "p2p"
-WIFI_DRIVER_FW_PATH_PARAM		:= "/sys/module/wlan/parameters/fwpath"
-WIFI_DRIVER_MODULE_PATH 		:= "/system/lib/modules/wlan.ko"
-WIFI_DRIVER_MODULE_NAME 		:= "wlan"
+BOARD_HAS_QCOM_WLAN                 := true
+BOARD_HAS_ATH_WLAN_AR6004           := true
+BOARD_CONFIG_ATH6KL_USB             := true
+BOARD_HAS_CFG80211_KERNEL3_4        := true
+BOARD_WLAN_DEVICE                   := qcwcn
+WPA_SUPPLICANT_VERSION              := VER_0_8_X
+BOARD_WPA_SUPPLICANT_DRIVER         := NL80211
+BOARD_WPA_SUPPLICANT_PRIVATE_LIB    := lib_driver_cmd_$(BOARD_WLAN_DEVICE)
+BOARD_HOSTAPD_DRIVER                := NL80211
+BOARD_HOSTAPD_PRIVATE_LIB           := lib_driver_cmd_$(BOARD_WLAN_DEVICE)
+PRODUCT_VENDOR_MOVE_ENABLED         := true
+WIFI_DRIVER_FW_PATH_STA             := "sta"
+WIFI_DRIVER_FW_PATH_AP              := "ap"
+WIFI_DRIVER_FW_PATH_P2P             := "p2p"
+WIFI_DRIVER_FW_PATH_PARAM           := "/sys/module/wlan/parameters/fwpath"
+WIFI_DRIVER_MODULE_PATH		        := "/system/vendor/lib/modules/wlan.ko"
+WIFI_DRIVER_MODULE_NAME             := "wlan"
 
 # NFC
 BOARD_HAVE_NFC := false
