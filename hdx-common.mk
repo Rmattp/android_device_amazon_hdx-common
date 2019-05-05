@@ -162,10 +162,13 @@ PRODUCT_COPY_FILES += \
 
 PRODUCT_PACKAGES += \
     sensors.msm8974
-    
-# Keystore
-#PRODUCT_PACKAGES += \
-#    keystore.msm8974
+
+# Telephony
+PRODUCT_PACKAGES += \
+    telephony-ext
+
+PRODUCT_BOOT_JARS += \
+    telephony-ext
 
 # USB
 PRODUCT_PACKAGES += \
