@@ -147,6 +147,10 @@ PRODUCT_PACKAGES += \
 	libOmxVenc \
 	qcmediaplayer
 
+PRODUCT_PACKAGES += \
+    libandroid_net \
+    netutils-wrapper-1.0
+
 # Power
 PRODUCT_PACKAGES += \
 	power.msm8974
