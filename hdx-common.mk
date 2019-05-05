@@ -174,14 +174,15 @@ PRODUCT_BOOT_JARS += \
 PRODUCT_PACKAGES += \
 	com.android.future.usb.accessory
 
+# WiFi
 PRODUCT_PACKAGES += \
-	wpa_supplicant \
-	wpa_supplicant_overlay.conf \
-	p2p_supplicant_overlay.conf \
-	hostapd_default.conf \
-	hostapd.accept \
-	hostapd.deny \
-        wificond
+    libwpa_client \
+    hostapd \
+    wificond \
+    wifilogd \
+    wpa_supplicant \
+    wpa_supplicant.conf \
+    wcnss_service
 
 # Wifi module - compat-wireless package
 PRODUCT_PACKAGES += \
