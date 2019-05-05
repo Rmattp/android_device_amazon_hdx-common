@@ -152,6 +152,9 @@ WIFI_DRIVER_FW_PATH_PARAM           := "/sys/module/wlan/parameters/fwpath"
 WIFI_DRIVER_MODULE_PATH		        := "/system/vendor/lib/modules/wlan.ko"
 WIFI_DRIVER_MODULE_NAME             := "wlan"
 
+# RIL
+TARGET_RIL_VARIANT := caf
+
 # NFC
 BOARD_HAVE_NFC := false
 
