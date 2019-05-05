@@ -41,12 +41,13 @@ PRODUCT_PACKAGES += \
 	init.class_main.sh \
 	init.qcom.class_core.sh \
 	init.qcom.factory.sh \
-	init.qcom.sensor.sh \
 	init.qcom.sh \
-	init.qcom.ssr.sh \
 	init.qcom.usb.sh \
 	ueventd.qcom.rc \
-	init.recovery.qcom.rc
+	init.recovery.qcom.rc \
+    qca6234-service.sh \
+    init.qcom.post_boot.sh \
+    init.qcom.bt.sh
 
 # Audio/Media
 PRODUCT_COPY_FILES += \

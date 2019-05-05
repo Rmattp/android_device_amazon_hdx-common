@@ -5,6 +5,9 @@
 #TODO: Add 'check' as fs_mgr_flags with data partition.
 # Currently we dont have e2fsck compiled. So fs check would failed.
 
+# NOTE: /system partition is now early-mounted and the fstab entry is specified in device tree (duplicated below for recovery image purposes only):
+#       /proc/device-tree/firmware/android/fstab/system
+
 #<src>                                           <mnt_point>       <type> <mnt_flags and options>                               <fs_mgr_flags>
 /dev/block/platform/msm_sdcc.1/by-name/system    /system           ext4   ro,barrier=1,discard                                  recoveryonly
 /dev/block/platform/msm_sdcc.1/by-name/userdata  /data             f2fs   nosuid,nodev,noatime,nodiratime,discard,inline_xattr  wait,nonremovable,check,encryptable=footer,length=-16384
@@ -14,3 +17,4 @@
 /dev/block/platform/msm_sdcc.1/by-name/boot      /boot             emmc   defaults                                              recoveryonly
 /dev/block/platform/msm_sdcc.1/by-name/recovery  /recovery         emmc   defaults                                              recoveryonly
 /devices/platform/xhci-hcd/usb*                  auto              auto   defaults                                              voldmanaged=usb:auto
+/dev/block/zram0                                 none              swap   defaults                                              zramsize=533413200,max_comp_streams=4,notrim
