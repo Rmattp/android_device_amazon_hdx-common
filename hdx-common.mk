@@ -90,9 +90,12 @@ PRODUCT_PACKAGES += \
 	e2fsck \
 	setup_fs
 
+# Qualcomm
 PRODUCT_PACKAGES += \
- 	libxml2 \
-	libnetcmdiface
+    libcnefeatureconfig \
+    libnetcmdiface \
+    librmnetctl \
+    libxml2
 
 # Graphics
 PRODUCT_PACKAGES += \
