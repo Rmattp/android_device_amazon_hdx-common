@@ -1,11 +1,8 @@
 # Assign external kernel modules to the DLKM class
 LOCAL_MODULE_CLASS := DLKM
 
-# Set the default install path to system/lib/modules
-LOCAL_MODULE_PATH := $(strip $(LOCAL_MODULE_PATH))
-ifeq ($(LOCAL_MODULE_PATH),)
-  LOCAL_MODULE_PATH := $(TARGET_OUT)/lib/modules
-endif
+# Set the default install path to system/vendor/lib/modules
+  LOCAL_MODULE_PATH := $(TARGET_OUT_VENDOR)/lib/modules
 
 # Set the default Kbuild file path to LOCAL_PATH
 KBUILD_FILE := $(strip $(KBUILD_FILE))
