@@ -101,7 +101,7 @@ on property:persist.usb.chgdisabled=0
     write /sys/class/power_supply/battery/charging_enabled 1
 
 # bt_hsic_control
-service bt_hsic_control /system/bin/sh /system/vendor/etc/hsic.control.bt.sh
+service bt_hsic_control /system/bin/sh /system/vendor/bin/hsic.control.bt.sh
     user root
     disabled
 
