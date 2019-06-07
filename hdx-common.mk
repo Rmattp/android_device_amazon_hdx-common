@@ -47,7 +47,8 @@ PRODUCT_PACKAGES += \
 	init.recovery.qcom.rc \
     qca6234-service.sh \
     init.qcom.post_boot.sh \
-    init.qcom.bt.sh
+    init.qcom.bt.sh \
+	init.qcom.coex.sh
 
 # Audio/Media
 PRODUCT_COPY_FILES += \
